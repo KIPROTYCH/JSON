@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: teal;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+#animallist {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#animallist p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+
+#animaldetails {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#animaldetails img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#animaldetails button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
