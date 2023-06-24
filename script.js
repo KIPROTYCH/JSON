@@ -29,8 +29,21 @@ fetch("http://localhost:3000/characters")// fetch a list of characters
                 voteButton.addEventListener("click", () => {//Add a click event listner to the voteButton
 
                     //Start updating the votes of the animal selected
-                    fetch(`http://localhost:3000/characters/${character.id}`,)
-
+                    fetch(`http://localhost:3000/characters/${character.id}`, {
+                        method: "PATCH" ,
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            votes:theAnimalDetails.votes + 1
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(updatedAnimal => {
+                        // Update the votes count on the page
+                        
+                    })
+                    
                 })
 
                     })
